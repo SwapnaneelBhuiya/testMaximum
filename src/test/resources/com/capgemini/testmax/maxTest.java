@@ -14,10 +14,10 @@ public class maxTest {
 	public void initialize() {
 		ob = new maximumMain();
 	}
-//	@Test
-//	public void testMax()
-//	{
-//		int ret=ob.findMax(3,2,1);
-//		Assert.assertEquals(3,ret);
-//	}
+	@Test
+	public void testMax()
+	{
+		int ret=ob.findMax(3,2,1);
+		Assert.assertEquals(3,ret);
+	}
 }
