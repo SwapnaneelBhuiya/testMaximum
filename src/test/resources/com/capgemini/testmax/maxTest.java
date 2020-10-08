@@ -9,7 +9,6 @@ import com.capgemini.max.maximumMain;
 public class maxTest {
 
 	maximumMain ob;
-
 	@Before
 	public void initialize() {
 		ob = new maximumMain();
@@ -34,7 +33,6 @@ public class maxTest {
 		Assert.assertEquals((int) rett, 34566);
 		Assert.assertEquals("Grape", check);
 	}
-
 	@Test
 	public void testMax3() {
 		int ret = ob.findMax(2, 1, 3);
