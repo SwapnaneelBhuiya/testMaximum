@@ -11,4 +11,21 @@ public class maximumMain {
 		return max;
 	}
 
+	public float findMaxf(float d, float e, float f) {
+		float max = d;
+		if (e > max)
+			max = e;
+		if (f > max)
+			max = f;
+		return max;
+	}
+	public String findMaxS(String x, String y, String z)
+	{
+		String max=x;
+		if(y.compareTo(max)>0)
+			max=y;
+		if(z.compareTo(max)>0)
+			max=z;
+		return max;
+	}
 }
