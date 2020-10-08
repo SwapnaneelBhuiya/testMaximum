@@ -20,4 +20,10 @@ public class maxTest {
 		int ret=ob.findMax(3,2,1);
 		Assert.assertEquals(3,ret);
 	}
+	@Test
+	public void testMax2()
+	{
+		int ret=ob.findMax(2,3,1);
+		Assert.assertEquals(3,ret);
+	}
 }
