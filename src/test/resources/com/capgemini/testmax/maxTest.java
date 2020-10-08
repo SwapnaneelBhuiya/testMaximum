@@ -13,33 +13,41 @@ public class maxTest {
 	public void initialize() {
 		ob = new maximumMain();
 	}
-
 	@Test
 	public void testMax() {
-		int ret = ob.findMax(3, 2, 1);
-		float rett = ob.findMaxf(34566, 23123, 13123);
-		String check = ob.findMaxS("Grape", "Apple", "Banana");
-		Assert.assertEquals(3, ret);
-		Assert.assertEquals((int) rett, 34566);
-		Assert.assertEquals("Grape", check);
+		Integer a[]= {3,2,1};
+		Double b[]= {34566.01, 23123.02, 13123.03};
+		String c[]={"Grape", "Apple", "Banana"};
+		Integer ret=ob.findMax(a);
+		Double checkD=ob.findMax(b);
+		String checkS=ob.findMax(c);
+		Assert.assertEquals(3, ret.intValue());
+		Assert.assertEquals((double)34566.01, checkD.doubleValue(),0.0);
+		Assert.assertEquals("Grape", checkS);
 	}
 
 	@Test
 	public void testMax2() {
-		int ret = ob.findMax(2, 3, 1);
-		float rett = ob.findMaxf(23123, 34566, 13123);
-		String check = ob.findMaxS("Apple", "Grape", "Banana");
-		Assert.assertEquals(3, ret);
-		Assert.assertEquals((int) rett, 34566);
-		Assert.assertEquals("Grape", check);
+		Integer a[]= {2,3,1};
+		Double b[]= {23123.02,34566.01, 13123.03};
+		String c[]={"Apple","Grape", "Banana"};
+		Integer ret=ob.findMax(a);
+		Double checkD=ob.findMax(b);
+		String checkS=ob.findMax(c);
+		Assert.assertEquals(3, ret.intValue());
+		Assert.assertEquals((double)34566.01, checkD.doubleValue(),0.0);
+		Assert.assertEquals("Grape", checkS);
 	}
 	@Test
 	public void testMax3() {
-		int ret = ob.findMax(2, 1, 3);
-		float rett = ob.findMaxf(23123, 13123, 34566);
-		String check = ob.findMaxS("Apple", "Banana", "Grape");
-		Assert.assertEquals(3, ret);
-		Assert.assertEquals((int) rett, 34566);
-		Assert.assertEquals("Grape", check);
+		Integer a[]= {2,1,3};
+		Double b[]= {23123.02, 13123.03,34566.01};
+		String c[]={"Apple", "Banana","Grape"};
+		Integer ret=ob.findMax(a);
+		Double checkD=ob.findMax(b);
+		String checkS=ob.findMax(c);
+		Assert.assertEquals(3, ret.intValue());
+		Assert.assertEquals((double)34566.01, checkD.doubleValue(),0.0);
+		Assert.assertEquals("Grape", checkS);
 	}
 }
