@@ -20,7 +20,11 @@ public class maximumMain <X extends Comparable<X>,Y extends Comparable<Y>,Z exte
 			if (i.compareTo(max) > 0)
 				max = i;
 		}
+		toPrint(max);
+	}
 
+	private static <E> void toPrint(E max) {
+		System.out.println(max);
 	}
 
 	public void testMaximum() {

@@ -14,33 +14,38 @@ public class maxTest {
 	public String c[]={"Grape", "Apple", "Banana"};
 	@Before
 	public void initialize() {
-		ob = new maximumMain<Integer,Double,String>(a,b,c);
+		ob = new maximumMain<Integer, Double, String>(a, b, c);
 	}
+
 	@Test
 	public void testMax() {
-		Integer a1[]= {3,2,1};
-		Double b1[]= {34566.01, 23123.02, 13123.03};
-		String c1[]={"Grape", "Apple", "Banana"};
-		maximumMain obj=new maximumMain<Integer,Double,String>(a1,b1,c1);
+		Integer a1[] = { 3, 2, 1 };
+		Double b1[] = { 34566.01, 23123.02, 13123.03 };
+		String c1[] = { "Grape", "Apple", "Banana" };
+		maximumMain obj = new maximumMain<Integer, Double, String>(a1, b1, c1);
+		obj.testMaximum();
 	}
 
 	@Test
 	public void testMax2() {
-		Integer a1[]= {2,3,1};
-		Double b1[]= {23123.02,34566.01, 13123.03};
-		String c1[]={"Apple","Grape", "Banana"};
-		maximumMain obj=new maximumMain<Integer,Double,String>(a1,b1,c1);
+		Integer a1[] = { 2, 3, 1 };
+		Double b1[] = { 23123.02, 34566.01, 13123.03 };
+		String c1[] = { "Apple", "Grape", "Banana" };
+		maximumMain obj = new maximumMain<Integer, Double, String>(a1, b1, c1);
+		obj.testMaximum();
 	}
+
 	@Test
 	public void testMax3() {
-		Integer a1[]= {2,1,3};
-		Double b1[]= {23123.02, 13123.03,34566.01};
-		String c1[]={"Apple", "Banana","Grape"};
-		maximumMain obj=new maximumMain<Integer,Double,String>(a1,b1,c1);
+		Integer a1[] = { 2, 1, 3 };
+		Double b1[] = { 23123.02, 13123.03, 34566.01 };
+		String c1[] = { "Apple", "Banana", "Grape" };
+		maximumMain obj = new maximumMain<Integer, Double, String>(a1, b1, c1);
+		obj.testMaximum();
 	}
+
 	@Test
-	public void testMaxi()
-	{
+	public void testMaxi() {
 		ob.testMaximum();
 	}
 }
