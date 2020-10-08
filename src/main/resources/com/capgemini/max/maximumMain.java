@@ -11,4 +11,13 @@ public class maximumMain {
 		return max;
 	}
 
+	public float findMaxf(float d, float e, float f) {
+		float max = d;
+		if (e > max)
+			max = e;
+		if (f > max)
+			max = f;
+		return max;
+	}
+
 }
