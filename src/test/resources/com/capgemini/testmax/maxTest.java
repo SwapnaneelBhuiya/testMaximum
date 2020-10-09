@@ -39,6 +39,13 @@ public class maxTest {
 		maximumMain obj=new maximumMain<Integer,Double,String>(a1,b1,c1);
 	}
 	@Test
+	public void tests()
+	{
+		ob.findMax(1,2,3,4,5,6);
+		ob.findMax("Swap","blue","game","house","reddish");
+		ob.findMax(32222.22,32312.1231,343423.34234,323423.23123,34234.43);
+	}
+	@Test
 	public void testMaxi()
 	{
 		ob.testMaximum();
